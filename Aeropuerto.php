@@ -63,7 +63,7 @@ Class Aeropuerto {
 
     public function ventaAutomatica($cant_asientos, $fecha, $destino) {
         $aerolineas = $this->getColAerolineas();
-        $i = 1;
+        $i = 0;
 
         foreach ($aerolineas as $aerolinea) {
             $vuelos = $aerolinea->getColVuelosProgramados();
